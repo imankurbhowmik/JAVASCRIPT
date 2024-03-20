@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body style="background-color: #212121; color: #fff; 
+      <!--{
+        display: none;
+      }  ">
+
+    
+</body>
+
+<script>
+    const div = document.createElement('div')
+    console.log(div);
+    div.className = 'main'
+    div.id = Math.round(Math.random() *10 + 1)
+    div.setAttribute('title' , 'generated title')  <!--optimised approach since it changes the values directly-->
+    div.style.backgroundColor = 'green'
+    // div.innerHTML = 'Mein Ankur hun'  <!--not an optimised approach since it first brings the values and then changes it-->
+
+    // see another approach
+    const createText = document.createTextNode("Mein Ankur hun")
+    div.appendChild(createText)
+
+    // attaching to body
+    document.body.appendChild(div)
+</script>
+</html>
