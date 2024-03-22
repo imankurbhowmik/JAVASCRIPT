@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur code</h1>
+    <button id="stop">stop</button>
+</body>
+<script>
+    setTimeout(function(){
+        console.log("Ankur");
+    },2000)
+
+    const saySurname = function(){
+        console.log("Bhowmik");
+    }
+    setTimeout(saySurname,2000)
+
+    const promoInBengali = function(){
+        document.querySelector('h1').innerHTML = "Hotash theke JS porchhi"
+    }
+
+    setTimeout(promoInBengali,2000)
+
+    // clearTimeout(promoInBengali)
+
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearTimeout(promoInBengali)
+        console.log("stopped");
+    })
+
+    
+</script>
+</html>
