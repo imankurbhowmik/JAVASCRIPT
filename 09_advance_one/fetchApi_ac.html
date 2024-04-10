@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FetchApi</title>
+</head>
+<body>
+    
+</body>
+<script>
+    
+    const getFacts = async () => {
+        const url = "https://cat-fact.herokuapp.com/facts";
+        const promise = await fetch(url);
+        const response = await promise.json();
+        console.log(response)
+    }
+</script>
+</html>
