@@ -8,6 +8,12 @@ console.log(score);
 console.log(typeof(score));  //string
 console.log(scoreUnreal);    
 
+//imp
+let a = number //reference error
+let b = string //reference error
+// since they are not defined yet whereas the following work fine
+let c = undefined
+
 let convToNumber = Number(score)
 console.log(typeof convToNumber);  //number
 
