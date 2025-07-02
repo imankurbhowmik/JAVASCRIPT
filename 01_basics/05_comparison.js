@@ -27,6 +27,10 @@ console.log(undefined > 0);
 console.log(undefined == 0);
 console.log(undefined >= 0);
 
+// imp point
+// == is abstract equality only gives true for null == undefined 
+// inequality operators involves type conversion to number so gives ans accordingly 
+
 console.log("20abc" > 2);
 // => False  
 console.log("20" > 2);
